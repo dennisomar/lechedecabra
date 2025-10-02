@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leche de Cabra - Salud y Bienestar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <header style="background: url('https://images.unsplash.com/photo-1585238342023-78c54b2c4ac3') center/cover no-repeat;">
+    <h1>🥛 Leche de Cabra</h1>
+    <p>El superalimento natural para tu salud y bienestar</p>
+    <a href="#beneficios">Descubre más</a>
+    <div class="contador">Visitas: <span id="visitas">0</span></div>
+  </header>
+
+  <section id="beneficios">
+    <h2>Beneficios de la Leche de Cabra</h2>
+    <p>✔️ Más digestiva que la de vaca.</p>
+    <p>✔️ Rica en calcio, fósforo y vitamina A.</p>
+    <p>✔️ Menor contenido de lactosa: ideal para digestiones sensibles.</p>
+    <p>✔️ Apoya el sistema inmunológico.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="mailto:dmogrovejo@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p style="margin-top:15px;">
+      O contáctanos directo en 
+      <a href="https://wa.me/51973133799" target="_blank">WhatsApp</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Leche de Cabra. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Contador de visitas con localStorage
+    let visitas = localStorage.getItem("visitas") || 0;
+    visitas++;
+    localStorage.setItem("visitas", visitas);
+    document.getElementById("visitas").innerText = visitas;
+  </script>
+</body>
+</html>

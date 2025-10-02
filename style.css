@@ -1,0 +1,147 @@
+/* === Estilos Generales === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* === Encabezado (Hero) === */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+header h1, 
+header p, 
+header a, 
+header .contador {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin: 20px 0;
+}
+
+header a {
+  background: #00a86b;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+header a:hover {
+  background: #007f52;
+}
+
+header .contador {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* === Secciones === */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+section h2 {
+  text-align: center;
+  color: #00a86b;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+section p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* === Formulario de Contacto === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background: #00a86b;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #007f52;
+}
+
+/* === Footer === */
+footer {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1.1rem;
+  }
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
