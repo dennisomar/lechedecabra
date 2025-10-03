@@ -1,0 +1,18 @@
+:root {
+  --primary: #6b8e23;
+  --accent: #ffa500;
+  --olive: #8b9a46;
+}
+body {margin:0;font-family:sans-serif;color:#333;}
+.container {max-width:1200px;margin:0 auto;padding:20px;}
+.header {display:flex;align-items:center;justify-content:space-between;padding:10px;}
+.hero {background:#6b8e23;color:#fff;text-align:center;padding:60px 20px;}
+.cta {display:inline-block;padding:10px 20px;background:#ffa500;color:#fff;text-decoration:none;margin:5px;border-radius:5px;}
+.section {padding:40px 20px;}
+.grid {display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.card {background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+footer {background:#222;color:#fff;padding:20px;text-align:center;}
+.contact-box form {display:flex;flex-direction:column;gap:10px;}
+.contact-box input,.contact-box textarea {padding:10px;border:1px solid #ccc;border-radius:5px;}
+.contact-box button {background:#6b8e23;color:#fff;padding:10px;border:none;border-radius:5px;cursor:pointer;}
+.whatsapp-btn {position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 20px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 6px rgba(0,0,0,0.3);}
